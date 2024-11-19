@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPORT NEWS</title>
+    <style>
+        body {
+            font-family: 'B Titr', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e7f3fe; /* پس‌زمینه ملایم */
+            line-height: 1.6;
+        }
+        header {
+            background-color: #0d47a1; /* رنگ تیره‌تر */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        nav {
+            background-color: #2196f3; /* رنگ آبی روشن */
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+        }
+        nav a:hover {
+            background-color: #1976d2; /* رنگ تیره‌تر */
+            transform: scale(1.1); /* افزایش اندازه */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* سایه */
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            justify-content: space-between;
+        }
+        .article {
+            flex: 1 1 calc(33.333% - 20px);
+            margin: 10px;
+            padding: 20px;
+            background: #fff; /* رنگ سفید */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .article:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        .article img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .article h2 {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #0d47a1; /* رنگ تیره‌تر */
+            text-align: center;
+        }
+        .article p {
+            font-size: 14px;
+            color: #555; /* رنگ خاکستری تیره‌تر */
+            text-align: justify;
+        }
+        footer {
+            background-color: #0d47a1; /* رنگ تیره‌تر */
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            width: 100%;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .article {
+                flex: 1 1 100%;
+            }
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>اخبار ورزشی</h1>
+    </header>
+    <nav>
+        <a href="#home">خانه</a>
+        <a href="#football">فوتبال</a>
+        <a href="#basketball">بسکتبال</a>
+        <a href="#contact">تماس با ما</a>
+    </nav>
+    <div class="container">
+        <div class="article">
+            <img src="https://via.placeholder.com/300x200" alt="خبر ورزشی 1">
+            <h2>خبر ورزشی 1</h2>
+            <p>توضیحات</p>
+        </div>
+        <div class="article">
+            <img src="https://via.placeholder.com/300x200" alt="خبر ورزشی 2">
+            <h2>خبر ورزشی 2</h2>
+            <p>توضیحات</p>
+        </div>
+        <div class="article">
+            <img src="https://via.placeholder.com/300x200" alt="خبر ورزشی 3">
+            <h2>خبر ورزشی 3</h2>
+            <p>توضیحات</p>
+        </div>
+    </div>
+    <footer>
+        <p> تمامی حقوق محفوظ است</p>
+    </footer>
+</body>
+</html>
